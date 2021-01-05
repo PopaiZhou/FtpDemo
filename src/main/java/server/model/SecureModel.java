@@ -1,0 +1,38 @@
+/**
+ * fshows.com
+ * Copyright (C) 2013-2020 All Rights Reserved.
+ */
+package server.model;
+
+import java.io.Serializable;
+
+/**
+ * @author zhoujp
+ * @version SecureModel.java, v 0.1 2020-12-31 11:44 zhoujp
+ */
+public class SecureModel implements Serializable {
+
+    private static final long serialVersionUID = -2108336644101910071L;
+    /**
+     * 验证 token
+     */
+    private String token;
+
+    private boolean autoSuccess;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public boolean isAutoSuccess() {
+        return autoSuccess;
+    }
+
+    public void setAutoSuccess(boolean autoSuccess) {
+        this.autoSuccess = autoSuccess;
+    }
+}
